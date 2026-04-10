@@ -4,7 +4,7 @@ import abstractfactorypattern.abstractproduct.Phone;
 
 public class SpainPhone implements Phone {
 
-    String number;
+    private final String number;
 
     public SpainPhone(String number) {
         this.number = number;

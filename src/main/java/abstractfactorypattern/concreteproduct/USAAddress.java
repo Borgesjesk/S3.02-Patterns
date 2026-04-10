@@ -4,9 +4,9 @@ import abstractfactorypattern.abstractproduct.Address;
 
 public class USAAddress implements Address {
 
-    String street;
-    String city;
-    String stateZip;
+    private final String street;
+    private final String city;
+    private final String stateZip;
 
     public USAAddress(String street, String city, String stateZip) {
         this.street = street;

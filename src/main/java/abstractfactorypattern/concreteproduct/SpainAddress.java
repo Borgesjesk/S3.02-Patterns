@@ -4,9 +4,9 @@ import abstractfactorypattern.abstractproduct.Address;
 
 public class SpainAddress implements Address {
 
-    String street;
-    String city;
-    String zip;
+    private final String street;
+    private final String city;
+    private final String zip;
 
     public SpainAddress(String street, String city, String zip) {
         this.street = street;
