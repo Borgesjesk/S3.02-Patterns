@@ -12,6 +12,12 @@ public class SpainPhone implements Phone {
 
     @Override
     public String getPhoneNumber() {
-        return ("Phone: +34 " + number);
+        if (number.length() != 9) {
+            throw new IllegalArgumentException("Spanish phone must be 9 digits");
+        }
+        return "Phone: +34 " + number.substring(0, 3) + " " +
+                number.substring(3, 5) + " " +
+                number.substring(5, 7) + " " +
+                number.substring(7, 9);
     }
 }
