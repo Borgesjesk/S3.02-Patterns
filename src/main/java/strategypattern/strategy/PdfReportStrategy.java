@@ -1,8 +1,8 @@
 package strategypattern.strategy;
 
-public class CsvReportStrategy implements ReportStrategy {
+public class PdfReportStrategy implements ReportStrategy{
     @Override
     public String generateReport(String data) {
-        return "report, data: " + data;
+        return "PDF Report: "+ data;
     }
 }
